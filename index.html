@@ -11,18 +11,16 @@
     <main>
         <section>
             <h1>Login</h1>
-            <p>Olá, seja bem vindo de volta!</p>
+            <p>Olá, seja bem vindo(a) de volta!</p>
             <div id="formulario">
-                <form action="#" method="post">
+                <form action="#" method="post" autocomplete="on">
                     <div class="campo">
-                        <span class="material-symbols-outlined">mail</span>
-                        <input type="email" name="email" id="email" placeholder="E-mail">
-                        <label for="username">E-mail</label>
+                        <label for="email"><span class="material-symbols-outlined">mail</span></label>
+                        <input type="email" name="email" id="email" placeholder="E-mail" autocomplete="email" required maxlength="30">
                     </div>
                     <div class="campo">
-                        <span class="material-symbols-outlined">lock</span>
-                        <input type="password" name="senha" id="senha" placeholder="Senha">
-                        <label for="senha">Senha</label>
+                        <label for="senha"><span class="material-symbols-outlined">lock</span></label>
+                        <input type="password" name="senha" id="senha" placeholder="Senha" autocomplete="current-password" required minlength="8" maxlength="16">
                     </div>
                     <input type="submit" value="Entrar">
                     <a href="#">Esqueci a senha</a>
@@ -30,5 +28,6 @@
             </div>
         </section>
     </main>
+    <script src="Scripts/script.js"></script>
 </body>
 </html>
