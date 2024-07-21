@@ -1,3 +1,4 @@
+/* Limpar placeholder nos campos input */
 function handleFocus(event) {
     event.target.dataset.placeholder = event.target.placeholder;
     event.target.placeholder = '';
